@@ -58,7 +58,12 @@ nav li a {
   padding: 8px;
   border: none;
 }
-
+.banner-img {
+  background-image: url("../images/Circle\ design.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .banner > img {
   width: 500px;
   height: 380px;
@@ -74,5 +79,80 @@ nav li a {
   margin-top: 50px;
   display: flex;
   justify-content: space-evenly;
-  padding: 0 50px;
+  padding: 0 80px;
+}
+
+.popular h3 {
+  text-align: center;
+  margin-top: 100px;
+}
+.nice-work {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 80px;
+  padding: 50px 40px;
+  border-radius: 5px;
+  background: #fff;
+}
+.price-tag {
+  font-size: 25px;
+}
+.fa-solid {
+  color: #fb8200;
+}
+.protect {
+  color: #e02c6dde;
+  font-family: Poppins;
+  align-items: end;
+}
+
+.featured {
+  display: flex;
+  padding: 120px;
+}
+.featured > img {
+  width: 320px;
+  height: 220px;
+}
+.featured-content {
+  margin-left: 200px;
+}
+.featured-content h2 {
+  color: #0a0826;
+  font-family: Poppins;
+}
+.featured-content p {
+  color: #6c6c6c;
+  font-family: Poppins;
+}
+.btn {
+  color: #fff;
+  background: #e02c6d;
+  padding: 10px 24px;
+  border: none;
+}
+/* footer styles */
+.footer-content {
+  color: #fff;
+  background-color: #0a0826;
+  height: 250px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* responsive media query */
+/* mobile devices */
+
+@media screen and (max-width: 576px) {
+  header {
+    padding: 50px;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .banner {
+    display: flex;
+  }
 }
